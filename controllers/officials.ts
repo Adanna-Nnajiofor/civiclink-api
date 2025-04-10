@@ -15,7 +15,7 @@ export const getOfficialsByQuery: RequestHandler = async (req, res) => {
   try {
     const result = await db.query(
       `
-      SELECT o.name, o.role, o.phone, o.email, o.address
+      SELECT o.id, o.name, o.role, o.phone, o.email, o.address, o.location_id, o.issue_id
       FROM officials o
       JOIN locations l ON o.location_id = l.id
       JOIN issues i ON o.issue_id = i.id

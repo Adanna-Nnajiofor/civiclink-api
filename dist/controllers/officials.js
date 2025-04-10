@@ -22,7 +22,7 @@ const getOfficialsByQuery = (req, res) => __awaiter(void 0, void 0, void 0, func
     }
     try {
         const result = yield db_1.db.query(`
-      SELECT o.name, o.role, o.phone, o.email, o.address
+      SELECT o.id, o.name, o.role, o.phone, o.email, o.address, o.location_id, o.issue_id
       FROM officials o
       JOIN locations l ON o.location_id = l.id
       JOIN issues i ON o.issue_id = i.id
