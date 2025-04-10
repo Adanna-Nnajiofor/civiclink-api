@@ -1,0 +1,1 @@
+{"root":["./app.ts","./index.ts","./controllers/issues.ts","./controllers/officials.ts","./db/index.ts","./routes/issues.ts","./routes/officials.ts"],"errors":true,"version":"5.8.2"}
